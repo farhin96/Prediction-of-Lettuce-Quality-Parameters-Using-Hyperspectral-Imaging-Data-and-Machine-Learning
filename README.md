@@ -1,0 +1,1 @@
+# Prediction-of-Lettuce-Quality-Parameters-Using-Hyperspectral-Imaging-Data-and-Machine-Learning
