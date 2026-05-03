@@ -105,8 +105,13 @@ This script performs PCA, calculates loading-based wavelength importance, and pr
 RFE
 ```bash
 python complete_leave_RFE.py
+
 ```
+
+
 This script performs Recursive Feature Elimination using Random Forest and prints selected wavelengths for each target variable.
+
+
 ---
 
 Step 2: Run ANN modeling
@@ -125,14 +130,31 @@ Ca,
 Brix,
 
 The ANN scripts report:
+
+
 Training correlation
+
+
 Testing correlation
+
+
 Validation correlation
+
+
 Overall correlation
+
+
 Training NRMSE
+
+
 Testing NRMSE
+
+
 Validation NRMSE
+
+
 Overall NRMSE
+
 ---
 Specific leaf-region analysis
 
@@ -189,13 +211,28 @@ testRatio = 0.15
 validRatio = 0.15
 ```
 Meaning:
-`numRuns`: number of repeated random train/test/validation splits
-`numTopRuns`: number of best runs used for final average
-`hidden_layer_sizes`: ANN hidden layer structure
-`regularization`: controls overfitting
-`activation`: ANN activation function
-`solver`: optimization method
-`trainRatio`, `testRatio`, `validRatio`: data split ratio
+
+
+`numRuns`: number of repeated random train/test/validation splits;
+
+
+`numTopRuns`: number of best runs used for final average;
+
+
+`hidden_layer_sizes`: ANN hidden layer structure;
+
+
+`regularization`: controls overfitting;
+
+
+`activation`: ANN activation function;
+
+
+`solver`: optimization method;
+
+
+`trainRatio`, `testRatio`, `validRatio`: data split ratio;
+
 ---
 Updating selected wavelengths
 
