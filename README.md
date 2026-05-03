@@ -91,12 +91,12 @@ FDR
 ```bash
 python complete_leave_FDR.py
 ```
-This script calculates the first derivative of reflectance and plots the FDR spectra.
+This script calculates the first derivative of reflectance and plots the FDR spectra;
 PCA
 ```bash
 python complete_leave_PCA.py
 ```
-This script performs PCA, calculates loading-based wavelength importance, and prints selected wavelengths.
+This script performs PCA, calculates loading-based wavelength importance, and prints selected wavelengths.;
 RFE
 ```bash
 python complete_leave_RFE.py
