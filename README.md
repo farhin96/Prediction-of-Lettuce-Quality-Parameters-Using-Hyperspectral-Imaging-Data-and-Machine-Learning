@@ -8,7 +8,7 @@ FDR: First Derivative Reflectance
 PCA: Principal Component Analysis based wavelength selection
 RFE: Recursive Feature Elimination using Random Forest
 ANN: Artificial Neural Network regression model
-The scripts are prepared for both complete leaf data and specific leaf-region data such as apex, middle, and bottom regions.
+.The scripts are prepared for both complete leaf data and specific leaf-region data such as apex, middle, and bottom regions.
 
 ---
 Files included
