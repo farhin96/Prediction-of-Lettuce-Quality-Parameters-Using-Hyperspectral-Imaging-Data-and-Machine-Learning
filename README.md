@@ -3,12 +3,24 @@
 Hyperspectral Feature Selection and ANN Modeling
 
 This folder contains Python scripts for hyperspectral reflectance analysis, feature selection, and ANN-based prediction of lettuce biochemical/nutrient traits.
+
+
 The workflow includes three feature selection methods and one ANN modeling method:
+
+
 FDR: First Derivative Reflectance;
+
+
 PCA: Principal Component Analysis based wavelength selection;
+
+
 RFE: Recursive Feature Elimination using Random Forest;
+
+
 ANN: Artificial Neural Network regression model;
-.The scripts are prepared for both complete leaf data and specific leaf-region data such as apex, middle, and bottom regions.
+
+
+The scripts are prepared for both complete leaf data and specific leaf-region data such as apex, middle, and bottom regions.
 
 ---
 Files included
@@ -16,28 +28,54 @@ Files included
 
 
 `complete_leave_FDR.py`	: Computes and plots first derivative reflectance from complete leaf spectra;
+
+
 `complete_leave_PCA.py`	: Selects important wavelengths using PCA;
+
+
 `complete_leave_RFE.py`	: Selects important wavelengths using RFE and Random Forest;
+
+
 `complete_leave_FDR_ANN.py`	: Runs ANN using FDR-selected wavelengths;
+
+
 `complete_leave_PCA_ANN.py`	: Runs ANN using PCA-selected wavelengths;
+
+
 `complete_leave_RFE_ANN.py` :	Runs ANN using RFE-selected wavelengths;
 
 Specific leaf-region (Apex, Middle, Bottom) scripts 
 
 
 `specific_part_FDR.py`	: Computes and plots first derivative reflectance for a specific leaf region;
+
+
 `specific_part_PCA.py`	: Selects important wavelengths from a specific leaf region using PCA;
+
+
 `specific_part_RFE.py`	: Selects important wavelengths from a specific leaf region using RFE;
+
+
 `specific_part_FDR_ANN.py`	: Runs ANN using FDR-selected wavelengths for a specific leaf region;
+
+
 `specific_part_PCA_ANN.py`	: Runs ANN using PCA-selected wavelengths for a specific leaf region;
+
+
 `specific_part_RFE_ANN.py`	: Runs ANN using RFE-selected wavelengths for a specific leaf region;
 
 Data files
 
 
 `completed_leave.xlsx`	: Complete leaf hyperspectral data;
+
+
 `GH_1and2_phase_apex.xlsx`	: Apex region hyperspectral data;
+
+
 `GH_1and2_phase_middle.xlsx`	: Middle region hyperspectral data;
+
+
 `GH_1and2_phase_bottom.xlsx`	: Bottom region hyperspectral data;
 
 ---
