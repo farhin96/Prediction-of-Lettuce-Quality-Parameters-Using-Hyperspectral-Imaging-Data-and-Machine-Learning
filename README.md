@@ -118,11 +118,11 @@ python complete_leave_PCA_ANN.py
 python complete_leave_RFE_ANN.py
 ```
 Each ANN script trains models for five target variables:
-pH
-EC
-NO3
-Ca
-Brix
+pH,
+EC,
+NO3,
+Ca,
+Brix,
 
 The ANN scripts report:
 Training correlation
