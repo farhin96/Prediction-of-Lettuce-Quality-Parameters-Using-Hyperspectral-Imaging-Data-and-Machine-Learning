@@ -15,6 +15,8 @@ Files included
 
 Complete leaf scripts
 File name	Purpose
+
+
 `complete_leave_FDR.py`	: Computes and plots first derivative reflectance from complete leaf spectra;
 `complete_leave_PCA.py`	: Selects important wavelengths using PCA;
 `complete_leave_RFE.py`	: Selects important wavelengths using RFE and Random Forest;
@@ -24,7 +26,7 @@ File name	Purpose
 
 Specific leaf-region (Apex, Middle, Bottom) scripts 
 
-File name	Purpose
+
 `specific_part_FDR.py`	: Computes and plots first derivative reflectance for a specific leaf region;
 `specific_part_PCA.py`	: Selects important wavelengths from a specific leaf region using PCA;
 `specific_part_RFE.py`	: Selects important wavelengths from a specific leaf region using RFE;
@@ -33,7 +35,8 @@ File name	Purpose
 `specific_part_RFE_ANN.py`	: Runs ANN using RFE-selected wavelengths for a specific leaf region;
 
 Data files
-File name	Description
+
+
 `completed_leave.xlsx`	: Complete leaf hyperspectral data;
 `GH_1and2_phase_apex.xlsx`	: Apex region hyperspectral data;
 `GH_1and2_phase_middle.xlsx`	: Middle region hyperspectral data;
