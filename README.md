@@ -13,8 +13,6 @@ ANN: Artificial Neural Network regression model;
 ---
 Files included
 
-Complete leaf scripts
-File name	Purpose
 
 
 `complete_leave_FDR.py`	: Computes and plots first derivative reflectance from complete leaf spectra;
