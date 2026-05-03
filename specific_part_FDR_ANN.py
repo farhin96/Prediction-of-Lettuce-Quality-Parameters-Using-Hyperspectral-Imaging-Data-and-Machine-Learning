@@ -21,7 +21,7 @@ targetCols = [465, 466, 467, 468, 469]   # MATLAB 465:469
 targetLabels = ["pH", "EC", "NO3", "Ca", "Brix"]
 
 numRuns = 150
-numTopRuns = 10
+numTopRuns = 100
 
 # Improved ANN settings
 hidden_layer_sizes = (10,)
