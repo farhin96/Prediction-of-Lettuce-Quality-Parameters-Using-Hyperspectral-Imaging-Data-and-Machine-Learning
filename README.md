@@ -5,7 +5,7 @@ Hyperspectral Feature Selection and ANN Modeling
 This folder contains Python scripts for hyperspectral reflectance analysis, feature selection, and ANN-based prediction of lettuce biochemical/nutrient traits.
 
 
-The workflow includes three feature selection methods and one ANN modeling method:
+The workflow includes two feature selection methods and one ANN modeling method:
 
 
 FDR: First Derivative Reflectance;
@@ -13,8 +13,6 @@ FDR: First Derivative Reflectance;
 
 PCA: Principal Component Analysis based wavelength selection;
 
-
-RFE: Recursive Feature Elimination using Random Forest;
 
 
 ANN: Artificial Neural Network regression model;
@@ -33,16 +31,13 @@ Files included
 `complete_leave_PCA.py`	: Selects important wavelengths using PCA;
 
 
-`complete_leave_RFE.py`	: Selects important wavelengths using RFE and Random Forest;
-
-
 `complete_leave_FDR_ANN.py`	: Runs ANN using FDR-selected wavelengths;
 
 
 `complete_leave_PCA_ANN.py`	: Runs ANN using PCA-selected wavelengths;
 
 
-`complete_leave_RFE_ANN.py` :	Runs ANN using RFE-selected wavelengths;
+
 
 Specific leaf-region (Apex, Middle, Bottom) scripts 
 
@@ -53,16 +48,12 @@ Specific leaf-region (Apex, Middle, Bottom) scripts
 `specific_part_PCA.py`	: Selects important wavelengths from a specific leaf region using PCA;
 
 
-`specific_part_RFE.py`	: Selects important wavelengths from a specific leaf region using RFE;
-
-
 `specific_part_FDR_ANN.py`	: Runs ANN using FDR-selected wavelengths for a specific leaf region;
 
 
 `specific_part_PCA_ANN.py`	: Runs ANN using PCA-selected wavelengths for a specific leaf region;
 
 
-`specific_part_RFE_ANN.py`	: Runs ANN using RFE-selected wavelengths for a specific leaf region;
 
 Data files
 
@@ -97,16 +88,13 @@ project_folder/
 ├── GH_1and2_phase_bottom.xlsx
 ├── complete_leave_FDR.py
 ├── complete_leave_PCA.py
-├── complete_leave_RFE.py
 ├── complete_leave_FDR_ANN.py
 ├── complete_leave_PCA_ANN.py
-├── complete_leave_RFE_ANN.py
 ├── specific_part_FDR.py
 ├── specific_part_PCA.py
-├── specific_part_RFE.py
 ├── specific_part_FDR_ANN.py
 ├── specific_part_PCA_ANN.py
-└── specific_part_RFE_ANN.py
+
 ```
 ---
 How to run the scripts
@@ -140,14 +128,9 @@ python complete_leave_PCA.py
 This script performs PCA, calculates loading-based wavelength importance, and prints selected wavelengths.;
 
 
-RFE
-```bash
-python complete_leave_RFE.py
-
-```
 
 
-This script performs Recursive Feature Elimination using Random Forest and prints selected wavelengths for each target variable.
+
 
 
 ---
@@ -158,7 +141,7 @@ After selecting wavelengths, run the corresponding ANN script.
 ```bash
 python complete_leave_FDR_ANN.py
 python complete_leave_PCA_ANN.py
-python complete_leave_RFE_ANN.py
+
 ```
 Each ANN script trains models for five target variables:
 pH,
@@ -220,7 +203,7 @@ Step 1: Run feature selection for a specific leaf region
 ```bash
 python specific_part_FDR.py
 python specific_part_PCA.py
-python specific_part_RFE.py
+
 ```
 ---
 Step 2: Run ANN modeling for a specific leaf region
@@ -228,7 +211,7 @@ Step 2: Run ANN modeling for a specific leaf region
 ```bash
 python specific_part_FDR_ANN.py
 python specific_part_PCA_ANN.py
-python specific_part_RFE_ANN.py
+
 ```
 ---
 Important settings to check before running ANN
@@ -290,13 +273,13 @@ selectedBands = {
     "Brix": np.array([...])
 }
 ```
-If you run PCA or RFE and get new selected wavelengths, copy those wavelengths into the corresponding ANN script before running the ANN model.
+If you run PCA or FDR and get new selected wavelengths, copy those wavelengths into the corresponding ANN script before running the ANN model.
 
 Suggested workflow
 
 ```text
 1. Run feature selection
-   - FDR, PCA, or RFE
+   - FDR, PCA
 
 2. Copy selected wavelengths into the related ANN script
 
